@@ -249,13 +249,19 @@
                 
 
 <div class="list-group">
-  <p class="h4">共计 5 篇文章</p>
+  <p class="h4">共计 7 篇文章</p>
   <hr>
   
   
     
       
       <p class="h5">2026</p>
+    
+    <a href="/2026/02/28/P00136-%E5%8D%8E%E4%B8%BAod%E6%9C%BA%E8%AF%95%E2%80%94MELON%E7%9A%84%E9%9A%BE%E9%A2%98-%E9%9B%A8%E8%8A%B1%E7%9F%B3%E9%97%AE%E9%A2%98/" class="list-group-item list-group-item-action">
+      <time>02-28</time>
+      <div class="list-group-item-title">#P00136. 华为od机试—MELON的难题 / 雨花石问题</div>
+    </a>
+  
     
     <a href="/2026/02/27/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" class="list-group-item list-group-item-action">
       <time>02-27</time>
@@ -284,6 +290,12 @@
     <a href="/2026/02/27/hello-world/" class="list-group-item list-group-item-action">
       <time>02-27</time>
       <div class="list-group-item-title">Hello World</div>
+    </a>
+  
+    
+    <a href="/2026/02/14/2026-03-14-tmux%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97-%E7%BB%88%E7%AB%AF%E5%A4%8D%E7%94%A8%E7%9A%84%E7%A5%9E%E5%99%A8/" class="list-group-item list-group-item-action">
+      <time>02-14</time>
+      <div class="list-group-item-title">tmux 入门指南</div>
     </a>
   
 </div>
@@ -430,7 +442,7 @@
                         return result;
                     };
                     
-                    const groupedData = groupByYear([["2026-02-27",4]]);
+                    const groupedData = groupByYear([["2026-02-14",1],["2026-02-27",4],["2026-02-28",1]]);
                     const years = Object.keys(groupedData).reverse();
                     
                     var initYear = parseInt(heatmapChartDom.getAttribute('year')) || new Date().getFullYear();
@@ -553,7 +565,7 @@
                         series: [{
                             name: 'Articles',
                             type: 'line',
-                            data: [4],
+                            data: [6],
                             smooth: true,
                             lineStyle: { color: '#5470C6', width: 2 },
                             itemStyle: { color: '#5470C6' },
@@ -590,7 +602,7 @@
                         series: [{
                             type: 'pie',
                             radius: '60%',
-                            data: [{"name":"数组","value":2},{"name":"哈希表","value":2},{"name":"简单","value":2},{"name":"JavaScript","value":1},{"name":"前端","value":1}],
+                            data: [{"name":"数组","value":2},{"name":"哈希表","value":2},{"name":"简单","value":2},{"name":"JavaScript","value":1},{"name":"前端","value":1},{"name":"动态规划","value":1},{"name":"tmux","value":1},{"name":"终端","value":1}],
                             label: {
                                 position: 'outside',
                                 formatter: '{b} {c} ({d}%)',
@@ -604,7 +616,7 @@
                         legend: {
                             bottom: '0',
                             left: 'center',
-                            data: [{"name":"数组","value":2},{"name":"哈希表","value":2},{"name":"简单","value":2},{"name":"JavaScript","value":1},{"name":"前端","value":1}].map(tag => tag.name),
+                            data: [{"name":"数组","value":2},{"name":"哈希表","value":2},{"name":"简单","value":2},{"name":"JavaScript","value":1},{"name":"前端","value":1},{"name":"动态规划","value":1},{"name":"tmux","value":1},{"name":"终端","value":1}].map(tag => tag.name),
                             textStyle: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         }
                     });
@@ -626,13 +638,13 @@
                         xAxis: { type: 'value', splitLine: { lineStyle: { type: 'dashed', color: '#ccc' } } },
                         yAxis: { 
                             type: 'category', 
-                            data: [{"name":"算法","value":2},{"name":"LeetCode","value":2},{"name":"技术","value":1},{"name":"前端","value":1},{"name":"后端","value":1}].map(category => category.name).reverse(), 
+                            data: [{"name":"算法","value":3},{"name":"LeetCode","value":2},{"name":"技术","value":2},{"name":"前端","value":1},{"name":"后端","value":1}].map(category => category.name).reverse(), 
                             axisLabel: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         },
                         series: [{
                             name: 'Category Count',
                             type: 'bar',
-                            data: [{"name":"算法","value":2},{"name":"LeetCode","value":2},{"name":"技术","value":1},{"name":"前端","value":1},{"name":"后端","value":1}].map(category => category.value).reverse(),
+                            data: [{"name":"算法","value":3},{"name":"LeetCode","value":2},{"name":"技术","value":2},{"name":"前端","value":1},{"name":"后端","value":1}].map(category => category.value).reverse(),
                             label: {
                                 show: true,
                                 position: 'right',
@@ -681,7 +693,7 @@
                         },
                         series: [{
                             type: 'tree',
-                            data: [{"name":"Categories","children":[{"name":"算法","children":[{"name":"LeetCode","children":[],"count":2,"path":"算法/LeetCode"}],"count":2,"path":"算法"},{"name":"技术","children":[{"name":"前端","children":[{"name":"后端","children":[],"count":1,"path":"技术/前端/后端"}],"count":1,"path":"技术/前端"}],"count":1,"path":"技术"}],"count":0,"path":""}],
+                            data: [{"name":"Categories","children":[{"name":"算法","children":[{"name":"LeetCode","children":[],"count":2,"path":"算法/LeetCode"},{"name":"华为od","children":[],"count":1,"path":"算法/华为od"}],"count":3,"path":"算法"},{"name":"技术","children":[{"name":"前端","children":[{"name":"后端","children":[],"count":1,"path":"技术/前端/后端"}],"count":1,"path":"技术/前端"},{"name":"工具","children":[{"name":"Linux","children":[],"count":1,"path":"技术/工具/Linux"}],"count":1,"path":"技术/工具"}],"count":2,"path":"技术"}],"count":0,"path":""}],
                             initialTreeDepth: -1,
                             top: '5%',
                             bottom: '10%',

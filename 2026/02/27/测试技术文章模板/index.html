@@ -716,7 +716,7 @@
                         return result;
                     };
                     
-                    const groupedData = groupByYear([["2026-02-27",4]]);
+                    const groupedData = groupByYear([["2026-02-14",1],["2026-02-27",4],["2026-02-28",1]]);
                     const years = Object.keys(groupedData).reverse();
                     
                     var initYear = parseInt(heatmapChartDom.getAttribute('year')) || new Date().getFullYear();
@@ -839,7 +839,7 @@
                         series: [{
                             name: 'Articles',
                             type: 'line',
-                            data: [4],
+                            data: [6],
                             smooth: true,
                             lineStyle: { color: '#5470C6', width: 2 },
                             itemStyle: { color: '#5470C6' },
@@ -876,7 +876,7 @@
                         series: [{
                             type: 'pie',
                             radius: '60%',
-                            data: [{"name":"数组","value":2},{"name":"哈希表","value":2},{"name":"简单","value":2},{"name":"JavaScript","value":1},{"name":"前端","value":1}],
+                            data: [{"name":"数组","value":2},{"name":"哈希表","value":2},{"name":"简单","value":2},{"name":"JavaScript","value":1},{"name":"前端","value":1},{"name":"动态规划","value":1},{"name":"tmux","value":1},{"name":"终端","value":1}],
                             label: {
                                 position: 'outside',
                                 formatter: '{b} {c} ({d}%)',
@@ -890,7 +890,7 @@
                         legend: {
                             bottom: '0',
                             left: 'center',
-                            data: [{"name":"数组","value":2},{"name":"哈希表","value":2},{"name":"简单","value":2},{"name":"JavaScript","value":1},{"name":"前端","value":1}].map(tag => tag.name),
+                            data: [{"name":"数组","value":2},{"name":"哈希表","value":2},{"name":"简单","value":2},{"name":"JavaScript","value":1},{"name":"前端","value":1},{"name":"动态规划","value":1},{"name":"tmux","value":1},{"name":"终端","value":1}].map(tag => tag.name),
                             textStyle: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         }
                     });
@@ -912,13 +912,13 @@
                         xAxis: { type: 'value', splitLine: { lineStyle: { type: 'dashed', color: '#ccc' } } },
                         yAxis: { 
                             type: 'category', 
-                            data: [{"name":"算法","value":2},{"name":"LeetCode","value":2},{"name":"技术","value":1},{"name":"前端","value":1},{"name":"后端","value":1}].map(category => category.name).reverse(), 
+                            data: [{"name":"算法","value":3},{"name":"LeetCode","value":2},{"name":"技术","value":2},{"name":"前端","value":1},{"name":"后端","value":1}].map(category => category.name).reverse(), 
                             axisLabel: { fontSize: 14, fontWeight: 'bold', fontFamily: 'Microsoft YaHei, SimSun, serif' }
                         },
                         series: [{
                             name: 'Category Count',
                             type: 'bar',
-                            data: [{"name":"算法","value":2},{"name":"LeetCode","value":2},{"name":"技术","value":1},{"name":"前端","value":1},{"name":"后端","value":1}].map(category => category.value).reverse(),
+                            data: [{"name":"算法","value":3},{"name":"LeetCode","value":2},{"name":"技术","value":2},{"name":"前端","value":1},{"name":"后端","value":1}].map(category => category.value).reverse(),
                             label: {
                                 show: true,
                                 position: 'right',
@@ -967,7 +967,7 @@
                         },
                         series: [{
                             type: 'tree',
-                            data: [{"name":"Categories","children":[{"name":"算法","children":[{"name":"LeetCode","children":[],"count":2,"path":"算法/LeetCode"}],"count":2,"path":"算法"},{"name":"技术","children":[{"name":"前端","children":[{"name":"后端","children":[],"count":1,"path":"技术/前端/后端"}],"count":1,"path":"技术/前端"}],"count":1,"path":"技术"}],"count":0,"path":""}],
+                            data: [{"name":"Categories","children":[{"name":"算法","children":[{"name":"LeetCode","children":[],"count":2,"path":"算法/LeetCode"},{"name":"华为od","children":[],"count":1,"path":"算法/华为od"}],"count":3,"path":"算法"},{"name":"技术","children":[{"name":"前端","children":[{"name":"后端","children":[],"count":1,"path":"技术/前端/后端"}],"count":1,"path":"技术/前端"},{"name":"工具","children":[{"name":"Linux","children":[],"count":1,"path":"技术/工具/Linux"}],"count":1,"path":"技术/工具"}],"count":2,"path":"技术"}],"count":0,"path":""}],
                             initialTreeDepth: -1,
                             top: '5%',
                             bottom: '10%',

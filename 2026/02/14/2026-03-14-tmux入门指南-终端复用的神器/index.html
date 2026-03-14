@@ -19,26 +19,35 @@
   <meta name="author" content="五阴炽盛">
   <meta name="keywords" content="个人博客,学习记录,思考分享">
   
-    <meta name="description" content="这是一个个人博客，记录自己的学习过程和思考。">
-<meta property="og:type" content="website">
-<meta property="og:title" content="标签">
-<meta property="og:url" content="https://fire-mirror.github.io/tags/index.html">
+    <meta name="description" content="什么是 tmux？tmux 是一个终端复用工具，它允许你在一个终端窗口中创建多个会话、窗口和面板，让你的终端使用体验更加高效和灵活。 为什么需要使用 tmux？作为开发者，你是否遇到过以下问题：  打开多个终端窗口，桌面变得混乱 远程连接断开后，正在运行的任务丢失 需要在多个终端之间快速切换 希望在不同会话之间共享终端状态  tmux 正是为了解决这些问题而生的！ 安装 tmux在 Ubuntu&amp;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="tmux 入门指南">
+<meta property="og:url" content="https://fire-mirror.github.io/2026/02/14/2026-03-14-tmux%E5%85%A5%E9%97%A8%E6%8C%87%E5%8D%97-%E7%BB%88%E7%AB%AF%E5%A4%8D%E7%94%A8%E7%9A%84%E7%A5%9E%E5%99%A8/index.html">
 <meta property="og:site_name" content="个人博客">
-<meta property="og:description" content="这是一个个人博客，记录自己的学习过程和思考。">
+<meta property="og:description" content="什么是 tmux？tmux 是一个终端复用工具，它允许你在一个终端窗口中创建多个会话、窗口和面板，让你的终端使用体验更加高效和灵活。 为什么需要使用 tmux？作为开发者，你是否遇到过以下问题：  打开多个终端窗口，桌面变得混乱 远程连接断开后，正在运行的任务丢失 需要在多个终端之间快速切换 希望在不同会话之间共享终端状态  tmux 正是为了解决这些问题而生的！ 安装 tmux在 Ubuntu&amp;">
 <meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-02-14T02:00:00.000Z">
+<meta property="article:modified_time" content="2026-03-14T03:51:53.875Z">
 <meta property="article:author" content="五阴炽盛">
-<meta property="article:tag" content="个人博客">
-<meta property="article:tag" content="学习记录">
-<meta property="article:tag" content="思考分享">
+<meta property="article:tag" content="tmux">
+<meta property="article:tag" content="终端">
+<meta property="article:tag" content="工具">
+<meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>标签 - 个人博客</title>
+  <title>tmux 入门指南 - 个人博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
 
@@ -103,7 +112,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 80vh;">
+<div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -221,17 +230,53 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="标签"></span>
+            <span id="subtitle" data-typed-text="tmux 入门指南"></span>
           
         </div>
 
         
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2026-02-14 10:00" pubdate>
+          2026年2月14日 上午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          916 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          8 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
       </div>
 
-      
-        <div class="scroll-down-bar">
-          <i class="iconfont icon-arrowdown"></i>
-        </div>
       
     </div>
   </div>
@@ -243,24 +288,305 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div id="board"
-          >
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
-                
+      
 
-<div class="text-center tagcloud">
-  <a href="/tags/JavaScript/" style="font-size: 15px; color: #bbe">JavaScript</a> <a href="/tags/Linux/" style="font-size: 15px; color: #bbe">Linux</a> <a href="/tags/tmux/" style="font-size: 15px; color: #bbe">tmux</a> <a href="/tags/%E5%89%8D%E7%AB%AF/" style="font-size: 15px; color: #bbe">前端</a> <a href="/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/" style="font-size: 15px; color: #bbe">动态规划</a> <a href="/tags/%E5%93%88%E5%B8%8C%E8%A1%A8/" style="font-size: 30px; color: #337ab7">哈希表</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 15px; color: #bbe">工具</a> <a href="/tags/%E6%95%B0%E7%BB%84/" style="font-size: 30px; color: #337ab7">数组</a> <a href="/tags/%E6%9D%82%E8%B0%88/" style="font-size: 15px; color: #bbe">杂谈</a> <a href="/tags/%E7%AE%80%E5%8D%95/" style="font-size: 30px; color: #337ab7">简单</a> <a href="/tags/%E7%BB%88%E7%AB%AF/" style="font-size: 15px; color: #bbe">终端</a>
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">tmux 入门指南</h1>
+            
+            
+              <div class="markdown-body">
+                
+                <h2 id="什么是-tmux？"><a href="#什么是-tmux？" class="headerlink" title="什么是 tmux？"></a>什么是 tmux？</h2><p>tmux 是一个终端复用工具，它允许你在一个终端窗口中创建多个会话、窗口和面板，让你的终端使用体验更加高效和灵活。</p>
+<h2 id="为什么需要使用-tmux？"><a href="#为什么需要使用-tmux？" class="headerlink" title="为什么需要使用 tmux？"></a>为什么需要使用 tmux？</h2><p>作为开发者，你是否遇到过以下问题：</p>
+<ul>
+<li>打开多个终端窗口，桌面变得混乱</li>
+<li>远程连接断开后，正在运行的任务丢失</li>
+<li>需要在多个终端之间快速切换</li>
+<li>希望在不同会话之间共享终端状态</li>
+</ul>
+<p>tmux 正是为了解决这些问题而生的！</p>
+<h2 id="安装-tmux"><a href="#安装-tmux" class="headerlink" title="安装 tmux"></a>安装 tmux</h2><h3 id="在-Ubuntu-Debian-上"><a href="#在-Ubuntu-Debian-上" class="headerlink" title="在 Ubuntu&#x2F;Debian 上"></a>在 Ubuntu&#x2F;Debian 上</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> apt update<br><span class="hljs-built_in">sudo</span> apt install tmux<br></code></pre></td></tr></table></figure>
+
+<h3 id="在-CentOS-RHEL-上"><a href="#在-CentOS-RHEL-上" class="headerlink" title="在 CentOS&#x2F;RHEL 上"></a>在 CentOS&#x2F;RHEL 上</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-built_in">sudo</span> yum install tmux<br></code></pre></td></tr></table></figure>
+
+<h3 id="在-macOS-上"><a href="#在-macOS-上" class="headerlink" title="在 macOS 上"></a>在 macOS 上</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">brew install tmux<br></code></pre></td></tr></table></figure>
+
+<h2 id="基本使用方法"><a href="#基本使用方法" class="headerlink" title="基本使用方法"></a>基本使用方法</h2><h3 id="1-创建新会话"><a href="#1-创建新会话" class="headerlink" title="1. 创建新会话"></a>1. 创建新会话</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">tmux new -s 会话名称<br></code></pre></td></tr></table></figure>
+
+<h3 id="2-分离会话"><a href="#2-分离会话" class="headerlink" title="2. 分离会话"></a>2. 分离会话</h3><p>按下 <code>Ctrl+b</code> 然后按 <code>d</code>，可以将当前会话分离到后台。</p>
+<h3 id="3-查看所有会话"><a href="#3-查看所有会话" class="headerlink" title="3. 查看所有会话"></a>3. 查看所有会话</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">tmux <span class="hljs-built_in">ls</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="4-重新连接会话"><a href="#4-重新连接会话" class="headerlink" title="4. 重新连接会话"></a>4. 重新连接会话</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">tmux attach -t 会话名称<br></code></pre></td></tr></table></figure>
+
+<h3 id="5-切换会话"><a href="#5-切换会话" class="headerlink" title="5. 切换会话"></a>5. 切换会话</h3><p>按下 <code>Ctrl+b</code> 然后按 <code>s</code>，可以列出所有会话并进行选择。</p>
+<h2 id="窗口和面板操作"><a href="#窗口和面板操作" class="headerlink" title="窗口和面板操作"></a>窗口和面板操作</h2><h3 id="窗口操作"><a href="#窗口操作" class="headerlink" title="窗口操作"></a>窗口操作</h3><ul>
+<li><code>Ctrl+b c</code>：创建新窗口</li>
+<li><code>Ctrl+b w</code>：列出所有窗口</li>
+<li><code>Ctrl+b 数字</code>：切换到指定编号的窗口</li>
+<li><code>Ctrl+b ,</code>：重命名当前窗口</li>
+<li><code>Ctrl+b &amp;</code>：关闭当前窗口</li>
+</ul>
+<h3 id="面板操作"><a href="#面板操作" class="headerlink" title="面板操作"></a>面板操作</h3><ul>
+<li><code>Ctrl+b %</code>：垂直分割面板</li>
+<li><code>Ctrl+b &quot;</code>：水平分割面板</li>
+<li><code>Ctrl+b 方向键</code>：在面板之间移动</li>
+<li><code>Ctrl+b z</code>：最大化&#x2F;还原当前面板</li>
+<li><code>Ctrl+b x</code>：关闭当前面板</li>
+</ul>
+<h2 id="常用快捷键总结"><a href="#常用快捷键总结" class="headerlink" title="常用快捷键总结"></a>常用快捷键总结</h2><table>
+<thead>
+<tr>
+<th>操作</th>
+<th>快捷键</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>分离会话</td>
+<td><code>Ctrl+b d</code></td>
+</tr>
+<tr>
+<td>创建新窗口</td>
+<td><code>Ctrl+b c</code></td>
+</tr>
+<tr>
+<td>切换窗口</td>
+<td><code>Ctrl+b 数字</code></td>
+</tr>
+<tr>
+<td>垂直分割面板</td>
+<td><code>Ctrl+b %</code></td>
+</tr>
+<tr>
+<td>水平分割面板</td>
+<td><code>Ctrl+b &quot;</code></td>
+</tr>
+<tr>
+<td>面板间移动</td>
+<td><code>Ctrl+b 方向键</code></td>
+</tr>
+<tr>
+<td>关闭面板</td>
+<td><code>Ctrl+b x</code></td>
+</tr>
+<tr>
+<td>查看会话列表</td>
+<td><code>Ctrl+b s</code></td>
+</tr>
+<tr>
+<td>查看窗口列表</td>
+<td><code>Ctrl+b w</code></td>
+</tr>
+</tbody></table>
+<h2 id="配置文件"><a href="#配置文件" class="headerlink" title="配置文件"></a>配置文件</h2><p>你可以创建 <code>~/.tmux.conf</code> 文件来自定义 tmux 的行为：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-comment"># 启用鼠标支持</span><br><span class="hljs-built_in">set</span> -g mouse on<br><br><span class="hljs-comment"># 设置前缀键为 Ctrl+a（默认是 Ctrl+b）</span><br><span class="hljs-built_in">set</span> -g prefix C-a<br>unbind C-b<br><span class="hljs-built_in">bind</span> C-a send-prefix<br><br><span class="hljs-comment"># 设置状态栏</span><br><span class="hljs-built_in">set</span> -g status-style <span class="hljs-built_in">bg</span>=black,<span class="hljs-built_in">fg</span>=white<br><span class="hljs-built_in">set</span> -g status-left <span class="hljs-string">&quot;#[bg=green,fg=black] #S #[default]&quot;</span><br><span class="hljs-built_in">set</span> -g status-right <span class="hljs-string">&quot;#[bg=blue,fg=black] %H:%M:%S #[default]&quot;</span><br><br><span class="hljs-comment"># 设置面板切换快捷键</span><br><span class="hljs-built_in">bind</span> -n M-h select-pane -L<br><span class="hljs-built_in">bind</span> -n M-j select-pane -D<br><span class="hljs-built_in">bind</span> -n M-k select-pane -U<br><span class="hljs-built_in">bind</span> -n M-l select-pane -R<br></code></pre></td></tr></table></figure>
+
+<h2 id="实际应用场景"><a href="#实际应用场景" class="headerlink" title="实际应用场景"></a>实际应用场景</h2><h3 id="场景一：远程开发"><a href="#场景一：远程开发" class="headerlink" title="场景一：远程开发"></a>场景一：远程开发</h3><p>当你通过 SSH 连接到远程服务器时，使用 tmux 可以确保即使连接断开，你的工作也不会丢失。</p>
+<h3 id="场景二：多任务处理"><a href="#场景二：多任务处理" class="headerlink" title="场景二：多任务处理"></a>场景二：多任务处理</h3><p>在一个终端窗口中，你可以同时：</p>
+<ul>
+<li>运行开发服务器</li>
+<li>查看日志</li>
+<li>编辑代码</li>
+<li>执行测试</li>
+</ul>
+<h3 id="场景三：团队协作"><a href="#场景三：团队协作" class="headerlink" title="场景三：团队协作"></a>场景三：团队协作</h3><p>通过 tmux 的共享会话功能，多个开发者可以同时查看和操作同一个终端，非常适合结对编程或技术支持。</p>
+<h2 id="进阶技巧"><a href="#进阶技巧" class="headerlink" title="进阶技巧"></a>进阶技巧</h2><ol>
+<li><strong>会话管理</strong>：使用 <code>tmux new-session</code> 创建带有初始窗口和面板的会话</li>
+<li><strong>窗口布局</strong>：使用 <code>tmux select-layout</code> 快速切换面板布局</li>
+<li><strong>复制模式</strong>：按下 <code>Ctrl+b [</code> 进入复制模式，使用方向键选择文本，按下 <code>Enter</code> 复制</li>
+<li><strong>插件管理</strong>：使用 TPM（Tmux Plugin Manager）安装插件</li>
+</ol>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>tmux 是一个功能强大的终端复用工具，它可以大大提高你的工作效率。虽然刚开始使用时可能需要记住一些快捷键，但一旦掌握，你会发现它是开发过程中的得力助手。</p>
+<p>从今天开始，尝试在你的日常工作中使用 tmux，相信你会爱上它的！</p>
+<p><strong>提示</strong>：如果你是 tmux 新手，建议先从基本的会话管理和面板操作开始，逐渐熟悉各种快捷键和配置选项。随着使用的深入，你会发现 tmux 的更多强大功能。</p>
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
+      
+
+<span class="category-chains">
+  
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/%E6%8A%80%E6%9C%AF/" class="category-chain-item">技术</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%8A%80%E6%9C%AF/%E5%B7%A5%E5%85%B7/" class="category-chain-item">工具</a>
+  
+  
+    <span>></span>
+    
+  <a href="/categories/%E6%8A%80%E6%9C%AF/%E5%B7%A5%E5%85%B7/Linux/" class="category-chain-item">Linux</a>
+  
+  
+
+  
+
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+    <div class="post-meta">
+      <i class="iconfont icon-tags"></i>
+      
+        <a href="/tags/tmux/" class="print-no-link">#tmux</a>
+      
+        <a href="/tags/%E7%BB%88%E7%AB%AF/" class="print-no-link">#终端</a>
+      
+        <a href="/tags/%E5%B7%A5%E5%85%B7/" class="print-no-link">#工具</a>
+      
+        <a href="/tags/Linux/" class="print-no-link">#Linux</a>
+      
+    </div>
+  
 </div>
 
-              </div>
-            </div>
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>tmux 入门指南</div>
+      <div>https://fire-mirror.github.io/2026/02/14/2026-03-14-tmux入门指南-终端复用的神器/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>五阴炽盛</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2026年2月14日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
           </div>
         </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2026/02/27/hello-world/" title="Hello World">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
       </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
     
 
     
@@ -356,6 +682,99 @@
 
 
 
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
 
